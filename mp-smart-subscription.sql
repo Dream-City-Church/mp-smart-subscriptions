@@ -12,7 +12,7 @@ CREATE PROCEDURE [dbo].[service_dcc_smart_subscriptions]
 	AS
 
 /****************************************************
-***				Smart Subscriptions				  ***
+***               Smart Subscriptions             ***
 *****************************************************
 A custom Dream City Church procedure for Ministry Platform
 Version: 1.1
