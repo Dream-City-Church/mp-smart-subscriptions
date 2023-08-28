@@ -71,7 +71,7 @@ FROM Contacts C
 WHERE
 	AL.Congregation_ID=CON.Congregation_ID
 	AND AL.Activity_Date >= GetDate()-7
-	AND ISNULL(C.__Age,16) >= 18
+	AND ISNULL(C.__Age,18) >= 18
 	AND C.Email_Address IS NOT NULL
 	AND C.Bulk_Email_Opt_Out <> 1
 	AND CON.Publication_ID IS NOT NULL
