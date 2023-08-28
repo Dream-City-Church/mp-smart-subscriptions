@@ -56,7 +56,7 @@ WHERE
 	AND ISNULL(P.Participant_Type_ID,28) IN (28,31,36,52,83)
 	AND NOT EXISTS(SELECT * FROM dp_Contact_Publications CP
 		WHERE CP.Contact_ID=C.Contact_ID
-		AND CP.Publication_ID=32)
+		AND CP.Publication_ID=@PrimaryPublicationID)
 
 /** Campus Smart Subscriptions **/
 INSERT INTO dp_Contact_Publications(Contact_ID,Publication_ID,Unsubscribed,Domain_ID)
